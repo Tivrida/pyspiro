@@ -1,0 +1,9 @@
+include README.md
+include pyproject.toml
+include setup.py
+recursive-include src *
+recursive-include tests *
+exclude venv
+exclude *.idea
+exclude __pycache__
+

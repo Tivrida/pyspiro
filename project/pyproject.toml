@@ -1,0 +1,38 @@
+[project]
+name = "pyspiro"
+version = "0.0.1"
+description = ""
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "LICENSE" }
+keywords = []
+authors = [
+  { name = "Bobrovskiy A.", email = "tivrida@mail.ru" }
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+  "Intended Audience :: Science/Research",
+  "Topic :: Scientific/Engineering :: Physics",
+  "License :: OSI Approved :: MIT License"
+]
+dependencies = ["numpy", "xarray", "netCDF4", "importlib-resources", "matplotlib", "cartopy"]
+
+[project.urls]
+Documentation = "https://github.com/Tivrida/pyspiro"
+
+
+[tool.setuptools.packages.find]
+namespaces = true
+where = ["src"]
+
+[tool.setuptools.package-data]
+"pyspiro._data" = ["*.nc"]
+
+

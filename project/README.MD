@@ -1,0 +1,1 @@
+This package is devoted to the implementation of two more models: the model of Spiro et al [1982] and Robinson et al. [1987], devoted to the calculation of ionospheric conductivity and particle flux calculations.
